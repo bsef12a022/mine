@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+
+
+<body style="margin-left:100px;margin-right:100px">
+    <nav class="navbar navbar-inverse row" role="navigation">
+        <div class="container">
+            <div>
+                <a class="navbar-brand" style="padding-top:25px;color:blue;font-weight:bold" href="Home/homeviev">TIME ACADEMY.net.pk</a>
+            </div>
+            <div class="navbar-header">
+                <button type="button" value="Doctors.net" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="navbar-brand"><a href="/Home/homeviev">Home</a></li>
+                    <li class="navbar-brand"><a href="#">Contact</a></li>
+                    <li class="navbar-brand"><a href="#">About</a></li>
+                    <li class="navbar-brand"><a href="/Home/policy">Policy</a></li>
+                </ul>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="navbar-brand" href="/Home/HloginView">Login <span class="caret"></span></a>
+                    </li>
+                    <li class="nav navbar-nav navbar-right">
+                        <a class="navbar-brand" href="/Home/registerMenuView">Register <span class="caret"></span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    @RenderBody()
+
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

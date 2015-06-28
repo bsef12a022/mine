@@ -1,0 +1,182 @@
+﻿@model MvcApplication1.Models.student
+
+@{Layout = null;}
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="~/Content/styles.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <script src="~/Scripts/bootstrap.js"></script>
+</head>
+<body style="margin-left:100px;margin-right:100px">
+    <nav class="navbar navbar-inverse row" role="navigation">
+        <div class="container">
+            <div>
+                <a class="navbar-brand" style="padding-top:25px;color:blue;font-weight:bold" href="/Student/update">TIME ACADEMY.net.pk</a>
+            </div>
+            <div class="navbar-header">
+                <button type="button" value="TIME ACADEMY.net" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li style="margin-left:40px;" class="navbar-brand"><a href="/Student/hview">back</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="col-md-3"></div>
+
+    <div class="col-md-8">
+
+        <div>
+            <h2 class="alert-info bg-primary">
+                Our Mission
+            </h2>
+            <p>
+                Our aim is to give yu job according to your requirment and at your ease . For this you must register
+                your self first than after registeration i'll response you whrere our meeting should be and which
+                things you must bring.
+            </p>
+        </div>
+    </div>
+
+    <div class="col-md-1"></div>
+
+    <div class="col-md-2">
+
+        <div>
+            <h3 style="color:cadetblue">  Our best Teacher record</h3>
+
+            <img src="tc.jpg" />
+
+        </div>
+        <div>
+            <p>
+                Naz Fatima
+                her     o level student Anum
+                got distinction in maths .
+
+            </p>
+        </div>
+    </div>
+    <br />
+
+
+
+
+
+
+
+
+    <div class="col-md-3"></div>
+
+    <div class="col-md-6">
+
+        <div>
+            <h2 class="page-header bg-primary">
+                Teachers's Registration Form
+            </h2>
+        </div>
+
+      
+@using (Html.BeginForm("editt", "Student"))
+{
+            <div style="margin-top:40px;margin-bottom:30px;font-weight:800;" class="bg-primary col-md-6">
+                Name:
+            </div>
+            <div style="margin-top:40px;margin-bottom:30px;font-weight:800;" class="col-md-6">
+                <input name="name" type="text" value=@Model.name />
+            </div>
+            <br />
+
+            <div style="margin-bottom:30px;font-weight:800;" class="bg-primary col-md-6">
+                Age:
+            </div>
+            <div style="margin-bottom:30px;font-weight:800;" class="col-md-6">
+                <input name="age" type="text" value=@Model.age />
+            </div>
+            <br />
+
+            <div style="margin-bottom:30px;font-weight:800;" class="bg-primary col-md-6">
+                institute_name:
+            </div>
+            <div style="margin-bottom:30px;font-weight:800;" class="col-md-6">
+                <input name="institute_name" type="text" value="@Model.institute_name" />
+
+
+            </div>
+
+            <br />
+            <div style="margin-bottom:30px;font-weight:800;" class="bg-primary col-md-6">
+                Subjects:
+            </div>
+            <div style="margin-bottom:30px;font-weight:800;" class="col-md-6">
+                <input name="subjects" type="text" value="@Model.subjects" />
+            </div>
+            <br />
+            <div style="margin-bottom:30px;font-weight:800;" class="bg-primary col-md-6">
+                address :
+            </div>
+            <div style="margin-bottom:30px;font-weight:800;" class="col-md-6">
+                <input name="address" type="text" value="@Model.address" />
+            </div>
+          
+            <div style="margin-bottom:30px;font-weight:800;" class="bg-primary col-md-6">
+                contact_num:
+            </div>
+            <div style="margin-bottom:30px;font-weight:800;" class="col-md-6">
+                <input name="contact_num" type="text" value="@Model.contact_num" />
+            </div>
+            
+            
+            <div style="margin-bottom:30px;font-weight:800;" class="bg-primary col-md-6">
+                password :
+            </div>
+            <div style="margin-bottom:30px;font-weight:800;" class="col-md-6">
+                <input name="password" type="text"  value="@Model.password" />
+            </div>
+
+            <div style="margin-bottom:30px;font-weight:800;" class="bg-primary col-md-6">
+                class_num:
+            </div>
+            <div style="margin-bottom:30px;font-weight:800;" class="col-md-6">
+                <input name="class_num" type="text" value="@Model.class_num" />
+            </div>
+
+
+            <br />
+            <div class="col-md-4"></div>
+            <input style="margin-top:30px;" type="submit" value="Edit" class="col-md-4 btn-primary" />
+            <div class="col-md-4"></div>
+}
+    </div>
+    <div class="row"></div>
+    <div class="alert-info">
+        <h2> Must Read policy for more info </h2>
+        <div style="float: right; width: 120px" ;font-size:1.6em;margin-bottom:2px;" class="btn-info"><a href="/Home/policy">Policy</a> </div>
+    </div>
+    <div class="col-md-3"></div>
+    <footer>
+        <div class="row">
+            <div class="col-lg-12">
+                <p>Copyright &copy; Your Website 2014</p>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <br />
+        <br />
+        <br />
+
+    </footer>
+
+
+</body>
+</html>

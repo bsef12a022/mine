@@ -1,0 +1,99 @@
+﻿@{Layout = null;}
+@model MvcApplication1.Models.admin
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="~/Scripts/bootstrap.js"></script>
+    <link href="~/Content/styles.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+</head>
+<body style="margin-left:100px;margin-right:100px">
+    <nav class="navbar navbar-inverse row" role="navigation">
+        <div class="container">
+            <div>
+                <a class="navbar-brand" style="padding-top:25px;color:blue;font-weight:bold" href="/Admin/loginn">TIME ACADEMY.net.pk</a>
+            </div>
+            <div class="navbar-header">
+                <button type="button" value="Doctors.net" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="navbar-brand"><a href="/Home/homeviev">Home <span class="glyphicon glyphicon-home "></span></a></li>
+                    <li class="navbar-brand"><a href="#">Contact</a></li>
+                    <li class="navbar-brand"><a href="#">About</a></li>
+                    <li class="navbar-brand"><a href="/Home/policy">Policy</a></li>
+
+                </ul>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="nav navbar-nav navbar-right">
+                        <p class="navbar-brand">Don't have an account please </p>
+                        <a class="navbar-brand" href="/Home/registerMenuView"> Register <span class="caret"></span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="col-lg-8 page-header ">
+        <form method="post" action="/Admin/login">
+            <p style="font-size:25px" class="text-primary">
+                Login
+            </p>
+            <p style="font-size:25px" class="text-primary">
+                EXISTING MEMBERS
+            </p>
+
+            <p style="font-size:25px" class="text-primary">
+                USERNAME <input type="text" name="Id" placeholder="username" />
+            </p>
+            <p style="font-size:25px" class="text-primary">
+                PASSWORD <input type="text" name="password" placeholder="Password" />
+            </p>
+            <input type="submit"  value="LOGIN" />
+        </form>
+    </div>
+    <div class="col-lg-4 page-header ">
+        <h3 class="text-primary">NOT A MEMBER?  <span class="glyphicon glyphicon-arrow-up"></span></h3>
+     
+        <p>
+            Welcome to the Time Academy.Our aim is to provide eligible person a job.
+            students who want full attention from the teacher , and want to study
+            in their own place , you are on right place we'll provide you eligible teacher
+            for this. To get beneifit from our site you must be member of this site. .
+            Kindly register your self to get benefit from us .kkkkkkkkkkkkkkkkkkkkkkkkkk
+           
+         
+          
+
+        </p>
+        
+    </div>
+    <br />
+    <div class="alert-info"></div>
+    
+    <div class="col-md-1"></div>
+
+    <div class="col-md-8">
+        
+            <footer class="panel-footer alert-info "><h2>  ADDRESS: JOHAR TOWN LAHORE BLOCK F house num 220</h2> </footer>
+        </div>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="row">
+            <div class="col-lg-12">
+                <p>Copyright &copy; Your Website 2014</p>
+            </div>
+        </div>
+        <!-- /.row -->
+    </footer>
+</body>
+</html>
